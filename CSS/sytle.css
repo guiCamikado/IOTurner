@@ -1,0 +1,139 @@
+/* Importando fonte para melhor estilização */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    background-color: #fffafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.divLogo {
+    margin-left: 5%;
+    padding-top: 0.5%;
+    transform: scale(1.7);
+}
+
+.imgLogo {
+    width: 70px;
+}
+
+#logoO {
+    z-index: 2;
+    position: absolute;
+    right: 27%;
+    animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+  }
+
+/* Barra superior */
+.top-bar {
+    background-color: #01497c;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.enroll-btn {
+    color: inherit;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px -2px 2px black;
+    transition: 0.5s;
+}
+
+.enroll-btn:hover {
+    transform: scale(1.05);
+}
+   
+/* Conteúdo principal */
+.content {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    flex: 1;
+}
+
+/* Seção de texto */
+.text-section {
+    flex: 1;
+}
+
+.course-name {
+    color: #4bb989;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.description {
+    color: #666;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #4bb989;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Seção de imagem */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Div no fundo do container */
+.footer-background {
+    background-color: #01497c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: auto; /* Garante que fique no fundo */
+}
